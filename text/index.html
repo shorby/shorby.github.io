@@ -29,7 +29,7 @@
     <meta property="og:title"              content="Collect leads from any link you share" />
     <meta property="og:description"        content="Retarget anyone who clicked on any shared link 🚀Get +34% clicks with branded url. TRY FOR FREE 🔻" />
     <meta property="og:image"              content="http://shorby.com/og-image.jpg" />
-    <link href="/static/css/main.d85f4dd2.css" rel="stylesheet" />
+    <link href="/static/css/main.e085926b.css" rel="stylesheet">
   </head>
   <body>
 
@@ -40,7 +40,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="header-nav">
               <div class="navbar-nav">
                 <a class="nav-item nav-link" href="/text/">FAQ</a>
-                <a class="nav-item nav-link" href="/text/">Pricing</a>
+                <a class="nav-item nav-link" data-toggle="modal" data-target="#pricing">Pricing</a>
                 <a class="nav-item nav-link" href="/text/">Login</a>
               </div>
             </div>
@@ -509,15 +509,43 @@
     </div>
   </main>
 
+  <div id="pricing" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header"><h1>Pricing</h1><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+        <div class="modal-body">
+          <div class="pricing">
+              <h6>* You only pay for real clicks, not bots. We detect real visitors by user agent in request headers using open source package</h6>
+              <div id="pricing-table" class="row">
+                <dl class="col-4">
+                  <dt id="pricing-head-1" data-toggle="collapse" data-target="#pricing-1" aria-expanded="true" aria-controls="pricing-1"><div class="plan">Start</div><div class="price">$29</div><div class="period">per month</div></dt>
+                  <dd id="pricing-1" class="collapse" aria-labelledby="pricing-head-1" data-parent="#pricing-table"><ul><li>5,000 human clicks *</li><li>1 project</li><li><mark><mark>unlimited</mark></mark> links</li><li>3 ad platforms</li><li>3 branded links</li><li class="excluded">Team members</li><li class="excluded">Google Analytics Tracker</li></ul></dd>
+                </dl>
+                <dl class="col-4 show">
+                  <dt id="pricing-head-2" data-toggle="collapse" data-target="#pricing-2" aria-expanded="true" aria-controls="pricing-2"><div class="plan">Growth</div><div class="price">$69</div><div class="period">per month</div></dt>
+                  <dd id="pricing-2" class="collapse show" aria-labelledby="pricing-head-2" data-parent="#pricing-table"><ul><li>30,000 human clicks *</li><li>1 project</li><li><mark><mark>unlimited</mark></mark> links</li><li><mark>unlimited</mark> ad platforms</li><li><mark>unlimited</mark> branded links</li><li>10 team members</li><li>Google Analytics Tracker</li></ul></dd>
+                </dl>
+                <dl class="col-4">
+                  <dt id="pricing-head-3" data-toggle="collapse" data-target="#pricing-3" aria-expanded="true" aria-controls="pricing-3"><div class="plan">Agency</div><div class="price">$149</div><div class="period">per month</div></dt>
+                  <dd id="pricing-3" class="collapse" aria-labelledby="pricing-head-3" data-parent="#pricing-table"><ul><li>150,000 human clicks *</li><li>7 projects</li><li><mark><mark>unlimited</mark></mark> links</li><li><mark>unlimited</mark> ad platforms</li><li><mark>unlimited</mark> branded links</li><li><mark>unlimited</mark> team members</li><li>Google Analytics Tracker</li></ul></dd>
+                </dl>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <footer><div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between">
       <div><span class="shorby-logo animated black">SHORBY<span></div>
       <nav class="d-flex flex-column  flex-sm-row text-center text-sm-left">
         <a href="/text/">Use Cases</a>
-        <a href="/text/">Pricing</a>
+        <a data-toggle="modal" data-target="#pricing">Pricing</a>
         <a href="/text/">Privacy & Terms</a>
         <a href="/text/">Support</a>
       </nav>
     </div></footer>
+
   <script type="text/javascript" src="/static/js/main.ac0c1bd6.js"></script>
   </body>
 </html>
