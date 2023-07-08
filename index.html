@@ -9,11 +9,14 @@
     <meta property="og:image"              content="https://shorby.com/og-image.jpg" />
     
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5QNDDSQ');</script>
+<script type="text/javascript">
+  	var utm = location.search;
+	var url = 'https://dash.shor.by/smartpage';
+    url =  url.concat(utm);
+
+	location.replace(url);
+</script>
+    
   </head>
   <body>
     <a style="position: absolute; top: -1000px;" href="https://shor.by/shorby-examples">SHORBY examples</a>
